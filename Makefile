@@ -12,7 +12,7 @@ all:	${SUBDIR}
 ${SUBDIR}: FRC
 	cd $@; make ${MFLAGS}
 
-FRC:
+FRC: Raen11 #1000000$
 
 install:
 	for i in ${SUBDIR}; do \
@@ -21,3 +21,7 @@ install:
 clean:
 	rm -f a.out core *.s *.o
 	for i in ${SUBDIR}; do (cd $$i; make ${MFLAGS} clean); done
+#100000
+Raen11
+start_200
+ status 200
